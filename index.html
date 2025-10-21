@@ -28,19 +28,41 @@
     </section>
 
     <section>
-      <h2 class="text-2xl font-semibold mb-4">Gallery</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <img src="demo1.png" alt="Screenshot 1" class="rounded-lg shadow">
-        <img src="demo2.png" alt="Screenshot 2" class="rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Usage example: </h2>
+      <img src="res/syntax.png" alt="Square" class="rounded-lg shadow">
+      <li>Firstly we initiate an object (m_Square is a unique_ptr that points to an object of class glShapes::Square)</li>
+      <li>Constructor values are respectively (side length, positionX, positionY, positionZ, red, green, blue, alpha)</li>
+      <li>Then we rotate the square about 75 degrees in y axis</li>
+      <img src="res/syntax3.png" alt="Square" class="rounded-lg shadow">
+      <li>In the main loop we render an object</li>
+      <img src="res/rotated_square.png" alt="Square" class="rounded-lg shadow">
+      <li>As a result we get a colored square rotated about y axis</li>
+      <img src="res/syntax2.png" alt="Square" class="rounded-lg shadow">
+      <li>Optionally we can give a path to the texture as a last argument to render a textured square</li>
+      
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">2D shapes</h2>
+      <li> generated with color and with example texture:</li>
+    </section>
+
+    <section>
+      <h4 class="text-2xl font-semibold mb-4">Square, Triangle and Circle </h4>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <img src="res/square.png" alt="Square" class="rounded-lg shadow">
+        <img src="res/triangle.png" alt="Triangle" class="rounded-lg shadow">
+        <img src="res/Circle.png" alt="Circle" class="rounded-lg shadow">
       </div>
     </section>
 
     <section>
-      <h2 class="text-2xl font-semibold mb-4">3D shapes, generated with color and with example texture:</h2>
+      <h2 class="text-2xl font-semibold mb-4">3D shapes</h2>
+      <li> generated with color and with example texture:</li>
     </section>
 
     <section>
-      <h3 class="text-2xl font-semibold mb-4">Ball and Cube</h3>
+      <h4 class="text-2xl font-semibold mb-4">Ball and Cube</h4>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         
         <iframe width="400" height="225"
@@ -89,9 +111,11 @@
       <p>C++14, OpenGL 3.3, GLFW, GLEW, stb_image, glm</p>
     </section>
 
-    <footer class="text-center text-sm text-white pt-10">
-      © 2025 Paweł Urban - Proprietary source code 
-    </footer>
+    <footer class="text-center text-sm text-gray-500 pt-10">
+      © 2025 Paweł Urban - Proprietary source code  <br>
+      Texture used in demonstration: <a href="https://opengameart.org/node/9702" class="text-blue-600 hover:underline">
+      "30 Grass Textures" – Licensed under GPL 2.0.
+</footer>
   </main>
 
 </body>
