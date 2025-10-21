@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="robots" content="noindex, nofollow">
+  <title>OpenGL glShapes library – Engineering Thesis</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="text-white font-sans" style="background-image: url('res/denim.webp'); background-repeat: repeat;">
+
+  <main class="max-w-4xl mx-auto p-6 space-y-10">
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">About</h2>
+      <p>
+        Library with classes that represent 2D and 3D Shapes.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Functions</h2>
+      <ul class="list-disc ml-6">
+        <li>Rendering 2D and 3D models</li>
+        <li>Rotation, Translation and Scaling</li>
+        <li>Setting chosen color</li>
+        <li>Texture mapping</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Usage example: </h2>
+      <img src="res/syntax.png" alt="Square" class="rounded-lg shadow">
+      <li>Firstly we initiate an object (m_Square is a unique_ptr that points to an object of class glShapes::Square)</li>
+      <li>Constructor values are respectively (side length, positionX, positionY, positionZ, red, green, blue, alpha)</li>
+      <li>Then we rotate the square about 75 degrees in y axis</li>
+      <img src="res/syntax3.png" alt="Square" class="rounded-lg shadow">
+      <li>In the main loop we render an object</li>
+      <img src="res/rotated_square.png" alt="Square" class="rounded-lg shadow">
+      <li>As a result we get a colored square rotated about y axis</li>
+      <img src="res/syntax2.png" alt="Square" class="rounded-lg shadow">
+      <li>Optionally we can give a path to the texture as a last argument to render a textured square</li>
+      
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">2D shapes</h2>
+      <li> generated with color and with example texture:</li>
+    </section>
+
+    <section>
+      <h4 class="text-2xl font-semibold mb-4">Square, Triangle and Circle </h4>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <img src="res/square.png" alt="Square" class="rounded-lg shadow">
+        <img src="res/triangle.png" alt="Triangle" class="rounded-lg shadow">
+        <img src="res/Circle.png" alt="Circle" class="rounded-lg shadow">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">3D shapes</h2>
+      <li> generated with color and with example texture:</li>
+    </section>
+
+    <section>
+      <h4 class="text-2xl font-semibold mb-4">Ball and Cube</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+        <iframe width="400" height="225"
+          src="https://www.youtube.com/embed/-KI8FWvghRg?autoplay=1&loop=1&playlist=-KI8FWvghRg&mute=1"
+          title="Ball"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+          class="rounded-lg shadow">
+        </iframe>
+
+        <iframe width="400" height="225"
+          src="https://www.youtube.com/embed/KF8pESARAJY?autoplay=1&loop=1&playlist=KF8pESARAJY&mute=1"
+          title="Cube"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+          class="rounded-lg shadow">
+        </iframe>
+      </div>
+    </section>
+
+
+    <section>
+      <h3 class="text-2xl font-semibold mb-4">Tetrahedron and Torus</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+        <iframe width="400" height="225"
+          src="https://www.youtube.com/embed/a4NoukP_8TE?autoplay=1&loop=1&playlist=a4NoukP_8TE&mute=1"
+          title="Tetrahedron"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+          class="rounded-lg shadow">
+        </iframe>
+
+        <iframe width="400" height="225"
+          src="https://www.youtube.com/embed/36__ukixRYQ?autoplay=1&loop=1&playlist=36__ukixRYQ&mute=1"
+          title="Torus"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+          class="rounded-lg shadow">
+        </iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Technologies</h2>
+      <p>C++14, OpenGL 3.3, GLFW, GLEW, stb_image, glm</p>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500 pt-10">
+      © 2025 Paweł Urban - Proprietary source code  <br>
+      Texture used in demonstration: <a href="https://opengameart.org/node/9702" class="text-blue-600 hover:underline">
+      "30 Grass Textures" – Licensed under GPL 2.0.
+</footer>
+  </main>
+
+</body>
+</html>
 
